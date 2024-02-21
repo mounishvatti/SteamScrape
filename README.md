@@ -1,7 +1,7 @@
 # Web scraping and Sentiment Analysis on Steam
 
 ### AIM: 
-To Build an end-to-end `machine learning` project to conduct `sentiment analysis` on Steam game reviews. 
+To Build an end-to-end `machine learning` project to conduct `sentiment analysis` on `Steam` game reviews. 
 
 ### Here are some specific details of the project:
 
