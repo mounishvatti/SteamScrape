@@ -1,4 +1,24 @@
+![image](https://github.com/mounishvatti/web-scraping-and-sentiment-analysis/assets/76279858/e5d219f9-3ac4-4518-b8bd-4cbbea35af79)
+
 # Web scraping and Sentiment Analysis on Steam
+
+### Note: Web scraping can be a powerful tool for extracting information from websites, but it's crucial to approach this practice with caution and adhere to ethical and legal guidelines.
+
+Indeed, many websites explicitly mention in their `Terms of Service` that `web scraping is not allowed`. It's essential to respect these terms and adhere to ethical standards when engaging in web scraping activities. Some common reasons why websites prohibit scraping include:
+
+1. `Server Load`: Scraping can put a strain on a website's servers, especially if done aggressively or without rate limiting. Excessive requests can slow down the website and impact the user experience for others.
+
+2. `Protecting Intellectual Property`: Websites may want to protect their content, images, and data from being copied or used without permission. They may have invested time and resources in creating unique and valuable information.
+
+3. `Competitive Concerns`: Websites may be concerned about competitors scraping their data for various purposes, such as price monitoring, market analysis, or content duplication.
+
+4. `Privacy Concerns`: Websites that handle sensitive or private information may restrict scraping to protect user privacy. Unauthorized access to such data can lead to legal issues.
+
+5. `Terms of Service Compliance`: Websites often outline specific rules in their Terms of Service regarding automated access, scraping, or data extraction. Violating these terms can result in legal consequences.
+
+To navigate this, always check a website's `robots.txt` file and its `Terms of Service` before attempting to scrape. If scraping is prohibited, respect these rules and seek alternative ways to access the information you need, such as using public APIs when available or obtaining permission from the website owner.
+
+Since I am not `pinging` the servers constantly at a high rate and `scraping` only a `partial amount of data` for `project purposes` related to `sentiment analysis` of `customer reviews`, there is no big deal. 
 
 ### AIM: 
 To Build an end-to-end `machine learning` project to conduct `sentiment analysis` on `Steam` game reviews. 
@@ -42,6 +62,7 @@ But since Safari has a built-in webdriver, I’ll be using Safari.
 !pip install webdriver-manager
 ```
 4. Write your Python script:
+
 Here's a basic example of a Python script that uses Selenium to scrape the title of a web page:
   
 `Python`
