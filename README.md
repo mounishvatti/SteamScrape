@@ -1,11 +1,11 @@
 # Web scraping and Sentiment Analysis on Steam
 
-### AIM 
+### AIM: 
 To Build an end-to-end `machine learning` project to conduct `sentiment analysis` on Steam game reviews. 
 
 ### Here are some specific details of the project:
 
-- The project uses Selenium to scrape reviews from the [`Steam`]() website for the game [Counter Strike 2]().
+- The project uses Selenium to scrape reviews from the [`Steam`](https://store.steampowered.com/) website for the game [Counter Strike 2](https://www.counter-strike.net/).
 - The data is cleaned and transformed using `NLTK`, including removing stop words and tokenizing the text.
 - `VADER` is used to perform `sentiment analysis` on the reviews, and the results are stored in a new column called "polarity scores".
 - A box plot is created to show the distribution of `polarity scores` for recommended and not recommended reviews.
@@ -21,14 +21,90 @@ This project aims to conduct `sentiment analysis` on `Steam` game reviews using 
 
 ### LIBRARIES USED
 
-- [`Selenium`](): For web scraping Steam game reviews.
-- [`Pandas`](): For data manipulation and analysis.
-- [`NLTK`](): For natural language processing tasks, such as tokenization, part-of-speech tagging, and sentiment analysis.
+- [`Selenium`](https://www.selenium.dev/): For web scraping Steam game reviews.
+- [`Pandas`](https://pandas.pydata.org/): For data manipulation and analysis.
+- [`NLTK`](https://www.nltk.org/): For natural language processing tasks, such as tokenization, part-of-speech tagging, and sentiment analysis.
 - [`WordCloud`](): For generating word clouds from the review text.
-- [`Plotly Express`]() and [`Matplotlib`](): For data visualization.
+- [`Plotly Express`](https://plotly.com/python/plotly-express/) and [`Matplotlib`](https://matplotlib.org/): For data visualization.
 - OS: For operating system-related functionalities.
 
 ## Stepwise implementation
+
+### Getting started with Selenium
+1. Install Selenium:
+```bash
+!pip install selenium
+```
+2. Install a WebDriver: You'll need to install a WebDriver for the browser you want to use.
+
+But since Safari has a built-in webdriver, I’ll be using Safari.
+```bash
+!pip install webdriver-manager
+```
+4. Write your Python script:
+Here's a basic example of a Python script that uses Selenium to scrape the title of a web page:
+  
+`Python`
+```python
+from selenium import webdriver # Create a webdriver instance
+driver = webdriver.Safari() # I am using Safari
+
+# Open the URL
+driver.get("https://www.example.com")
+
+# Get the title of the page
+title = driver.title
+
+# Print the title
+print(title)
+
+# Close the browser
+driver.quit()
+```
+### Make Sure You Have Safari’s WebDriver
+
+Safari and Safari Technology Preview each provide their own safaridriver executable. 
+Make sure you already have the executable on your device:
+
+Safari’s executable is located at: `/usr/bin/safaridriver`.
+
+### Safari Technology Preview's executable is part of the application bundle’s contents.
+
+Each safaridriver is capable of launching only the Safari version it’s associated with, and the two can run simultaneously. Although you can launch safaridriver manually by running a safaridriver executable, most Selenium libraries launch the driver automatically. See the documentation for your preferred client library to learn how to specify which browser to use.
+
+### To manually run a safaridriver executable:
+1. Navigate to `/usr/bin/safaridriver` in Finder
+2. Click on it
+3. A terminal window will open where you have to give your system `pwd`.
+4. Done, now you have manually launched a safariwebdriver
+
+### To use other web browsers with Selenium, you need to download the appropriate web driver for each browser. Here are examples for Chrome, Firefox, and Microsoft Edge:
+[`Selenium documentation for different browsers`](https://www.selenium.dev/documentation/webdriver/browsers/)
+### Chrome:
+```python
+from selenium import webdriver
+
+# Download and install the ChromeDriver from https://sites.google.com/chromium.org/driver/
+# Make sure to provide the correct path to the chromedriver executable
+driver = webdriver.Chrome(executable_path='/path/to/chromedriver')
+```
+### Firefox:
+```python
+from selenium import webdriver
+
+# Download and install the geckodriver from https://github.com/mozilla/geckodriver/releases
+# Make sure to provide the correct path to the geckodriver executable
+driver = webdriver.Firefox(executable_path='/path/to/geckodriver')
+```
+### Microsoft Edge:
+```python
+from selenium import webdriver
+
+# Download and install the Microsoft Edge WebDriver from https://developer.microsoft.com/en-us/microsoft-edge/tools/webdriver/
+# Make sure to provide the correct path to the MicrosoftEdgeDriver executable
+driver = webdriver.Edge(executable_path='/path/to/MicrosoftEdgeDriver')
+```
+### Note: We can also use Selenium with other libraries like BeautifulSoup to parse the HTML content we scrape.
 
 ### 1. Web Scraping
 - The code starts by importing necessary libraries and defining the game ID and URL template.
@@ -45,6 +121,47 @@ This project aims to conduct `sentiment analysis` on `Steam` game reviews using 
 - Text data is pre-processed by removing stopwords and tokenizing using NLTK.
 - Sentiment analysis is performed using the SentimentIntensityAnalyzer from NLTK.
 - Correlation between review sentiment and recommendation status is analysed.
+
+  ### While performing the removal of stopwords from the dataset you may face an issue related to SSL Certification
+  ### To resolve the issue:
+
+  Step 1: Importing NLTK
+  ```python
+  import nltk
+  from nltk.corpus import stopwords
+
+  ```
+  Step 2: Importing ssl and temporarliy pausing certificate verification
+  Note: Not recommended if you are building any resource
+  ```python
+  import ssl
+
+  try:
+      _create_unverified_https_context = ssl._create_unverified_context
+  except AttributeError:
+      pass
+  else:
+      ssl._create_default_https_context = _create_unverified_https_context
+
+  nltk.download('stopwords')
+  ```
+  ### For tokenizing
+
+  ```python
+  nltk.download('punkt')
+  ```
+
+  ### For tagging
+
+  ```python
+  nltk.download('averaged_perceptron_tagger')
+  ```
+
+  ### For using Vader
+
+  ```python
+  nltk.download('vader_lexicon')
+  ```
 
 ### 5. Visualization
 - Box plots are created to visualize the distribution of polarity scores for Recommended and Not Recommended reviews.
