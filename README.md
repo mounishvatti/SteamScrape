@@ -1,4 +1,4 @@
-![image](https://github.com/mounishvatti/web-scraping-and-sentiment-analysis/assets/76279858/e5d219f9-3ac4-4518-b8bd-4cbbea35af79)
+![4](https://github.com/mounishvatti/web-scraping-and-sentiment-analysis/assets/76279858/8a958497-e0fd-4ad7-aeae-31fd87231058)
 
 # 🔎 🌐 👨🏻‍💻 📉 Web scraping and Sentiment Analysis on Steam
 
