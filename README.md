@@ -1,5 +1,5 @@
 ![image](https://github.com/mounishvatti/web-scraping-and-sentiment-analysis/assets/76279858/e5d219f9-3ac4-4518-b8bd-4cbbea35af79)
-
+🔎->🌐
 # Web scraping and Sentiment Analysis on Steam
 
 ### Note: Web scraping can be a powerful tool for extracting information from websites, but it's crucial to approach this practice with caution and adhere to ethical and legal guidelines.
