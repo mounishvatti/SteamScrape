@@ -5,7 +5,7 @@ To Build an end-to-end `machine learning` project to conduct `sentiment analysis
 
 ### Here are some specific details of the project:
 
-- The project uses Selenium to scrape reviews from the [`Steam`]() website for the game [Counter Strike 2].
+- The project uses Selenium to scrape reviews from the [`Steam`]() website for the game [Counter Strike 2]().
 - The data is cleaned and transformed using `NLTK`, including removing stop words and tokenizing the text.
 - `VADER` is used to perform `sentiment analysis` on the reviews, and the results are stored in a new column called "polarity scores".
 - A box plot is created to show the distribution of `polarity scores` for recommended and not recommended reviews.
