@@ -103,6 +103,7 @@ Each safaridriver is capable of launching only the Safari version it’s associa
 > [!TIPS]
 > To use other web browsers with Selenium, you need to download the appropriate web driver for each browser. Here are examples for Chrome, Firefox, and Microsoft Edge:
 [`Selenium documentation for different browsers`](https://www.selenium.dev/documentation/webdriver/browsers/)
+
 ### Chrome:
 ```python
 from selenium import webdriver
@@ -148,11 +149,11 @@ driver = webdriver.Edge(executable_path='/path/to/MicrosoftEdgeDriver')
 
   ### While performing the removal of stopwords from the dataset you may face an issue related to SSL Certification
 
-  > [!WARNING]
-  > NO SSL CERTIFICATE FOUND CANNOT DOWNLOAD
+> [!WARNING]
+> NO SSL CERTIFICATE FOUND CANNOT DOWNLOAD
 
-  > [!TIPS]
-  > You can pause the certificate verification temporarily, but it is not suggested for building huge resources.
+> [!TIPS]
+> You can pause the certificate verification temporarily, but it is not suggested for building huge resources.
  
   ### To resolve the issue:
 
