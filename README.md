@@ -101,7 +101,7 @@ Each safaridriver is capable of launching only the Safari version it’s associa
 4. Done, now you have manually launched a safariwebdriver
 
 
-> [!TIPS]
+> [!TIP]
 > To use other web browsers with Selenium, you need to download the appropriate web driver for each browser. 
 
 
@@ -152,14 +152,13 @@ driver = webdriver.Edge(executable_path='/path/to/MicrosoftEdgeDriver')
 - Sentiment analysis is performed using the SentimentIntensityAnalyzer from NLTK.
 - Correlation between review sentiment and recommendation status is analysed.
 
-  ### While performing the removal of stopwords from the dataset you may face an issue related to SSL Certification
 
 > [!WARNING]
 > NO SSL CERTIFICATE FOUND CANNOT DOWNLOAD
  
   ### To resolve the issue:
 
-> [!TIPS]
+> [!TIP]
 > You can pause the certificate verification temporarily, but it is not suggested for building huge resources.
 
   Step 1: Importing NLTK
