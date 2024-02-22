@@ -101,7 +101,9 @@ Each safaridriver is capable of launching only the Safari version it’s associa
 4. Done, now you have manually launched a safariwebdriver
 
 > [!TIPS]
-> To use other web browsers with Selenium, you need to download the appropriate web driver for each browser. Here are examples for Chrome, Firefox, and Microsoft Edge:
+> To use other web browsers with Selenium, you need to download the appropriate web driver for each browser. 
+
+Here are examples for Chrome, Firefox, and Microsoft Edge:
 [`Selenium documentation for different browsers`](https://www.selenium.dev/documentation/webdriver/browsers/)
 
 ### Chrome:
@@ -151,11 +153,11 @@ driver = webdriver.Edge(executable_path='/path/to/MicrosoftEdgeDriver')
 
 > [!WARNING]
 > NO SSL CERTIFICATE FOUND CANNOT DOWNLOAD
+ 
+  ### To resolve the issue:
 
 > [!TIPS]
 > You can pause the certificate verification temporarily, but it is not suggested for building huge resources.
- 
-  ### To resolve the issue:
 
   Step 1: Importing NLTK
   ```python
