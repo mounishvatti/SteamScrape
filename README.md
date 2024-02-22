@@ -154,7 +154,7 @@ driver = webdriver.Edge(executable_path='/path/to/MicrosoftEdgeDriver')
 
 
 > [!WARNING]
-> ⚠️ NO SSL CERTIFICATE FOUND!
+> NO SSL CERTIFICATE FOUND ‼️
  
   ### To resolve the issue:
 
