@@ -100,8 +100,10 @@ Each safaridriver is capable of launching only the Safari version it’s associa
 3. A terminal window will open where you have to give your system `pwd`.
 4. Done, now you have manually launched a safariwebdriver
 
+
 > [!TIPS]
 > To use other web browsers with Selenium, you need to download the appropriate web driver for each browser. 
+
 
 Here are examples for Chrome, Firefox, and Microsoft Edge:
 [`Selenium documentation for different browsers`](https://www.selenium.dev/documentation/webdriver/browsers/)
@@ -130,6 +132,7 @@ from selenium import webdriver
 # Make sure to provide the correct path to the MicrosoftEdgeDriver executable
 driver = webdriver.Edge(executable_path='/path/to/MicrosoftEdgeDriver')
 ```
+
 > [!NOTE]
 > We can also use Selenium with other libraries like BeautifulSoup to parse the HTML content we scrape.
 
