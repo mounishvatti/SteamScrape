@@ -2,7 +2,8 @@
 
 # 🔎 🌐 👨🏻‍💻 📉 Web scraping and Sentiment Analysis on Steam
 
-### Note: Web scraping can be a powerful tool for extracting information from websites, but it's crucial to approach this practice with caution and adhere to ethical and legal guidelines.
+> [!NOTE]
+> Web scraping can be a powerful tool for extracting information from websites, but it's crucial to approach this practice with caution and adhere to ethical and legal guidelines.
 
 Indeed, many websites explicitly mention in their `Terms of Service` that `web scraping is not allowed`. It's essential to respect these terms and adhere to ethical standards when engaging in web scraping activities. Some common reasons why websites prohibit scraping include:
 
@@ -99,7 +100,8 @@ Each safaridriver is capable of launching only the Safari version it’s associa
 3. A terminal window will open where you have to give your system `pwd`.
 4. Done, now you have manually launched a safariwebdriver
 
-### To use other web browsers with Selenium, you need to download the appropriate web driver for each browser. Here are examples for Chrome, Firefox, and Microsoft Edge:
+> [!TIPS]
+> To use other web browsers with Selenium, you need to download the appropriate web driver for each browser. Here are examples for Chrome, Firefox, and Microsoft Edge:
 [`Selenium documentation for different browsers`](https://www.selenium.dev/documentation/webdriver/browsers/)
 ### Chrome:
 ```python
@@ -125,7 +127,8 @@ from selenium import webdriver
 # Make sure to provide the correct path to the MicrosoftEdgeDriver executable
 driver = webdriver.Edge(executable_path='/path/to/MicrosoftEdgeDriver')
 ```
-### Note: We can also use Selenium with other libraries like BeautifulSoup to parse the HTML content we scrape.
+> [!NOTE]
+> We can also use Selenium with other libraries like BeautifulSoup to parse the HTML content we scrape.
 
 ### 1. Web Scraping
 - The code starts by importing necessary libraries and defining the game ID and URL template.
@@ -144,6 +147,13 @@ driver = webdriver.Edge(executable_path='/path/to/MicrosoftEdgeDriver')
 - Correlation between review sentiment and recommendation status is analysed.
 
   ### While performing the removal of stopwords from the dataset you may face an issue related to SSL Certification
+
+  > [!WARNING]
+  > NO SSL CERTIFICATE FOUND CANNOT DOWNLOAD
+
+  > [!TIPS]
+  > You can pause the certificate verification temporarily, but it is not suggested for building huge resources.
+ 
   ### To resolve the issue:
 
   Step 1: Importing NLTK
