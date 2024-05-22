@@ -49,6 +49,8 @@ This project aims to conduct `sentiment analysis` on `Steam` game reviews using 
 - [`Plotly Express`](https://plotly.com/python/plotly-express/) and [`Matplotlib`](https://matplotlib.org/): For data visualization.
 - OS: For operating system-related functionalities.
 
+![image](https://github.com/mounishvatti/SteamScrape/assets/76279858/b910beca-8c00-48c3-bf59-dff44df48e90)
+
 ## Stepwise implementation
 
 ### Getting started with Selenium
