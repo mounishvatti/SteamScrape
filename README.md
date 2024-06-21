@@ -1,6 +1,4 @@
-![4](https://github.com/mounishvatti/web-scraping-and-sentiment-analysis/assets/76279858/8a958497-e0fd-4ad7-aeae-31fd87231058)
-
-## SteamScraper Web scraping and Sentiment Analysis on Steam
+![project-1](https://github.com/mounishvatti/SteamScrape/assets/76279858/c4bee95d-592f-4881-8ffd-88d226321127)
 
 > [!NOTE]
 > Web scraping can be a powerful tool for extracting information from websites, but it's crucial to approach this practice with caution and adhere to ethical and legal guidelines.
