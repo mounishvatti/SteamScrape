@@ -1,3 +1,21 @@
+## 🎮 Web Scraping & Sentiment Analysis on Steam Game Reviews 💬
+
+Ever wondered what players really think about a game before you dive in? This project does just that! By scraping Steam game reviews, we not only gather user feedback but also run some sentiment analysis to understand if the community is loving it or hating it.
+
+### What’s Inside?
+- 🔹 Web Scraping – Automatically gather reviews from Steam using Selenium.
+- 🔹 Sentiment Analysis – Run reviews through Vader and NLTK to determine if players are all smiles or all frowns. 😄😞
+- 🔹 Data Insights – Get a deeper understanding of game reception through key sentiment metrics and visualizations.
+
+### Key Features:
+	- 🕹️ Game Review Scraping – Collect user reviews from any Steam game using Python libraries.
+	- 🤖 Sentiment Analysis – Analyze the tone of reviews (positive, negative, neutral) using powerful text analysis tools.
+	- 📊 Data Insights – Visualize the sentiment distribution to see how players truly feel.
+
+Perfect for anyone who wants to make informed decisions before buying or for developers looking to learn web scraping and sentiment analysis. Get ready to scrape and analyze, because your next gaming decision just got easier! 🎮📊
+
+Let me know if this aligns with what you’re looking for! 😊
+
 ![project-1](https://github.com/mounishvatti/SteamScrape/assets/76279858/c4bee95d-592f-4881-8ffd-88d226321127)
 
 > [!NOTE]
