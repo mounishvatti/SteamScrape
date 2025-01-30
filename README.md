@@ -14,8 +14,6 @@ Ever wondered what players really think about a game before you dive in? This pr
 
 Perfect for anyone who wants to make informed decisions before buying or for developers looking to learn web scraping and sentiment analysis. Get ready to scrape and analyze, because your next gaming decision just got easier! 🎮📊
 
-Let me know if this aligns with what you’re looking for! 😊
-
 ![project-1](https://github.com/mounishvatti/SteamScrape/assets/76279858/c4bee95d-592f-4881-8ffd-88d226321127)
 
 > [!NOTE]
